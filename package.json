@@ -1,14 +1,14 @@
 {
-  "name": "moodlemobile",
+  "name": "edupaclmsmobile",
   "version": "4.2.0",
-  "description": "The official app for Moodle.",
+  "description": "Edupac LMS",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "Edupac Holdings (Pty) Ltd",
+    "email": "directors@edupac.co.za"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moodlehq/moodleapp.git"
+    "url": "https://github.com/EdupacDevelopers/moodleapp.git"
   },
   "license": "Apache-2.0",
   "licenses": [
@@ -26,7 +26,7 @@
     "build:test": "NODE_ENV=testing ionic build --configuration=testing",
     "dev:android": "ionic cordova run android --livereload --external --ssl",
     "dev:ios": "ionic cordova run ios",
-    "prod:android": "NODE_ENV=production ionic cordova run android --prod",
+    "prod:android": "ionic cordova run android --prod",
     "prod:ios": "NODE_ENV=production ionic cordova run ios --prod",
     "storybook": "start-storybook -p 6006",
     "test": "NODE_ENV=testing gulp && jest --verbose",
@@ -37,7 +37,8 @@
     "ionic:serve:before": "gulp",
     "ionic:serve": "cross-env-shell ./scripts/serve.sh",
     "ionic:build:before": "gulp",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "resources" : "ionic cordova resources"
   },
   "dependencies": {
     "@angular/animations": "10.0.14",
